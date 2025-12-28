@@ -1,0 +1,12 @@
+class A:
+    X=10
+    def m1(self):
+        print("super class A:m1 method")
+class B(A):
+    X=20
+    def m1(self):
+        print('child class x variable',self.x)
+        print('super class x variable',super().x)
+        b=B()
+        b=m1()
+        
